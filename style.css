@@ -41,7 +41,11 @@ body, html {
 }
 
 .logo-btn:hover {
+<<<<<<< HEAD
     background-color: #4e5b02;
+=======
+    background-color: #BCBB4D;
+>>>>>>> 6b6d620ffedff19d4cd826302a204adcf988ae0b
 }
 
 .sidebar {
@@ -98,5 +102,10 @@ body, html {
     font-size: 1.2rem;
     max-width: 600px;
     line-height: 1.6;
+<<<<<<< HEAD
     color: #066f66;
 }
+=======
+    color: #94a3b8;
+}
+>>>>>>> 6b6d620ffedff19d4cd826302a204adcf988ae0b
