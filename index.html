@@ -7,12 +7,54 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
+    <!-- Projects Section (Moved to the Top) -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3 class="section-title">Öne Çıkan Projeler</h3>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h4>Power BI Satış ve Performans Dashboardı</h4>
+                    <p>Büyük veri setleri üzerinden dinamik KPI takibi, gelir analizi ve trend tahminlemeleri sunan interaktif rapor.</p>
+                    <div class="card-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                    <h4>SQL Veri Analizi ve Veri Temizleme</h4>
+                    <p>Karmaşık sorgular, JOIN işlemleri ve pencere fonksiyonları kullanılarak gerçekleştirilen müşteri analizi.</p>
+                    <div class="card-tech">
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
+                    <h4>İleri Excel Veri Modeli ve Raporlama</h4>
+                    <p>Power Query ve Makro/VBA otomasyonları ile veri işleme süreçlerini hızlanan dinamik yönetim paneli.</p>
+                    <div class="card-tech">
+                        <span>Excel</span>
+                        <span>Power Query</span>
+                        <span>VBA</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
             <h1 class="name">Ali İslam Dinç</h1>
@@ -28,7 +70,7 @@
 
             <p class="bio">
                 Karmaşık veri setlerini anlamlı iş zekası çıktısına dönüştürmeye odaklı; 
-                SQL, Power BI ve ileri düzey Excel yetkinlikleriyle stratejik kararlara yön veren 
+                SQL, Power BI ve ileri düzey Excel yetkinlikleriyle stratejik kararları alan ve bunlara yön veren 
                 sonuç odaklı Veri Analisti.
             </p>
 
@@ -38,51 +80,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h3 class="section-title">Öne Çıkan Projeler</h3>
-            <div class="projects-grid">
-                
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <div class="card-icon"><i class="fa-solid fa-chart-column"></i></div>
-                    <h4>Power BI Satış ve Performans Dashboardı</h4>
-                    <p>Büyük veri setleri üzerinden dinamik KPI takibi, gelir analizi ve trend tahminlemeleri sunan interaktif rapor.</p>
-                    <div class="card-tech">
-                        <span>Power BI</span>
-                        <span>DAX</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="card-icon"><i class="fa-solid fa-database"></i></div>
-                    <h4>SQL Veri Analizi ve Veri Temizleme</h4>
-                    <p>Karmaşık sorgular, JOIN işlemleri ve pencere fonksiyonları (Window Functions) kullanılarak gerçekleştirilen müşteri analizi.</p>
-                    <div class="card-tech">
-                        <span>PostgreSQL</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
-                    <h4>İleri Excel Veri Modeli ve Raporlama</h4>
-                    <p>Power Query ve Makro/VBA otomasyonları ile veri işleme süreçlerini hızlandıran dinamik yönetim paneli.</p>
-                    <div class="card-tech">
-                        <span>Excel</span>
-                        <span>Power Query</span>
-                        <span>VBA</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
