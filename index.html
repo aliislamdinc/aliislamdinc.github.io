@@ -1,254 +1,95 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head><link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ali İslam Dinç | Data Analytics Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali İslam Dinç | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-    <header>
-        <h1>Ali İslam Dinç</h1>
-        <p>Data Analyst | Excel | SQL | Power BI | AI</p>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="name">Ali İslam Dinç</h1>
+            <h2 class="title">Data Analyst</h2>
+            
+            <div class="skills-tags">
+                <span><i class="fa-solid fa-database"></i> SQL</span>
+                <span><i class="fa-solid fa-chart-line"></i> Power BI</span>
+                <span><i class="fa-solid fa-file-excel"></i> Advanced Excel</span>
+                <span><i class="fa-solid fa-chart-pie"></i> Data Visualization</span>
+                <span><i class="fa-solid fa-robot"></i> AI & Analytics</span>
+            </div>
+
+            <p class="bio">
+                Karmaşık veri setlerini anlamlı iş zekası çıktısına dönüştürmeye odaklı; 
+                SQL, Power BI ve ileri düzey Excel yetkinlikleriyle stratejik kararlara yön veren 
+                sonuç odaklı Veri Analisti.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Projelerim</a>
+                <a href="cv.pdf" class="btn btn-secondary" target="_blank"><i class="fa-solid fa-download"></i> CV İndir</a>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Hakkımda</h2>
-        <p>Ben Ali İslam Dinç. Lojistik ve veri analitiği alanında tecrübeliyim.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3 class="section-title">Öne Çıkan Projeler</h3>
+            <div class="projects-grid">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h4>Power BI Satış ve Performans Dashboardı</h4>
+                    <p>Büyük veri setleri üzerinden dinamik KPI takibi, gelir analizi ve trend tahminlemeleri sunan interaktif rapor.</p>
+                    <div class="card-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                    <h4>SQL Veri Analizi ve Veri Temizleme</h4>
+                    <p>Karmaşık sorgular, JOIN işlemleri ve pencere fonksiyonları (Window Functions) kullanılarak gerçekleştirilen müşteri analizi.</p>
+                    <div class="card-tech">
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
+                    <h4>İleri Excel Veri Modeli ve Raporlama</h4>
+                    <p>Power Query ve Makro/VBA otomasyonları ile veri işleme süreçlerini hızlandıran dinamik yönetim paneli.</p>
+                    <div class="card-tech">
+                        <span>Excel</span>
+                        <span>Power Query</span>
+                        <span>VBA</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Yetenekler</h2>
-        <ul>
-            <li>Excel</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>AI</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projeler</h2>
-        <ul>
-            <li>Proje 1</li>
-            <li>Proje 2</li>
-            <li>Proje 3</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>İletişim</h2>
-        <p>Mail: aliislamdinc@example.com</p>
-    </section>
-</body>
-font-family:Poppins,sans-serif;
-
-background:#07111f;
-
-color:white;
-
-overflow-x:hidden;
-
-}
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:40px;
-
-background:
-radial-gradient(circle at top,#1d4ed8 0%,#07111f 60%);
-
-}
-
-h1{
-
-font-size:70px;
-
-font-weight:700;
-
-margin-bottom:15px;
-
-letter-spacing:2px;
-
-}
-
-h2{
-
-font-size:28px;
-
-font-weight:300;
-
-color:#9ec5ff;
-
-margin-bottom:25px;
-
-}
-
-p{
-
-max-width:700px;
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#d6d6d6;
-
-margin-bottom:45px;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-.btn{
-
-padding:18px 40px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:.35s;
-
-}
-
-.primary{
-
-background:#2563eb;
-
-color:white;
-
-}
-
-.primary:hover{
-
-background:#3b82f6;
-
-transform:translateY(-4px);
-
-}
-
-.secondary{
-
-border:2px solid white;
-
-color:white;
-
-}
-
-.secondary:hover{
-
-background:white;
-
-color:#07111f;
-
-transform:translateY(-4px);
-
-}
-
-.scroll{
-
-margin-top:80px;
-
-font-size:14px;
-
-opacity:.6;
-
-animation:updown 1.8s infinite;
-
-}
-
-@keyframes updown{
-
-0%{transform:translateY(0);}
-50%{transform:translateY(12px);}
-100%{transform:translateY(0);}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<section class="hero">
-
-<h1>Ali İslam Dinç</h1>
-
-<h2>Data Analyst • Excel • SQL • Power BI • AI</h2>
-
-<p>
-
-Veriyi anlamlı bilgiye dönüştürmeyi hedefleyen,
-lojistik operasyon deneyimini veri analitiği ile
-birleştiren ve karar süreçlerine değer katmayı
-amaçlayan bir veri analisti adayı.
-
-</p>
-
-<div class="buttons">
-
-<a href="#" class="btn primary">
-
-Projelerim
-
-</a>
-
-<a href="#" class="btn secondary">
-
-CV İndir
-
-</a>
-
-</div>
-
-<div class="scroll">
-
-▼ Aşağı Kaydır ▼
-
-</div>
-
-</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ali İslam Dinç. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
