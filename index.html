@@ -2,40 +2,1053 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali İslam Dinç | Veri Analisti</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Ali İslam Dinç - Veri Analisti ve Raporlama Uzmanı. Power BI, SQL, Excel, Power Query, Power Pivot ve veri analizi projeleri."
+    >
+
+    <meta
+        name="keywords"
+        content="Ali İslam Dinç, veri analisti, raporlama uzmanı, Power BI, SQL, Excel, Power Query, Power Pivot"
+    >
+
+    <meta name="author" content="Ali İslam Dinç">
+
+    <title>Ali İslam Dinç | Veri Analisti ve Raporlama Uzmanı</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome ikonları -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS dosyası -->
     <link rel="stylesheet" href="style.css">
-</head> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
-    <div class="site-container">
-        <!-- Sol Üst Logo -->
-        <header class="logo-area">
-            <button class="logo-btn">Ali İslam Dinç</button>
-        </header>
 
-        <!-- Yan Menü -->
-        <nav class="sidebar">
-            <ul>
-                <li><button>Özgeçmişim</button></li>
-                <li><button>CV'm</button></li>
-                <li><button>Power BI Analiz Projelerim</button></li>
-                <li><button>SQL Projelerim</button></li>
-                <li><button>Kişisel Dashboard Tasarımlarım</button></li>
-                <li><button>Power Query Çalışmalarım</button></li>
-                <li><button>Pivot Tablo Çalışmalarım</button></li>
-                <li><button>Power Pivot Analizleri</button></li>
-                <li><button>Veri Analizleri</button></li>
-                <li><button>Yazılarım</button></li>
-                <li><button>Görseller</button></li>
-            </ul>
-        </nav>
+    <!-- Dekoratif arka plan öğeleri -->
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-glow glow-one" aria-hidden="true"></div>
+    <div class="background-glow glow-two" aria-hidden="true"></div>
 
-        <!-- Orta Bilgi Alanı -->
-        <main class="main-content">
-            <h1>Veri Analisti ve Raporlama Uzmanı</h1>
-            <p>Merhaba! Veri setlerini anlamlı iş zekası çıktılarına dönüştürme odaklı çalışıyorum. SQL, Power BI, ileri Excel ve Power Query yetkinliklerimle stratejik kararlar alan ve bunlara yön veren sonuç odaklı bir profesyonelim.</p>
-        </main>
-    </div>
+    <!-- Üst menü -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="#anasayfa" class="logo" aria-label="Ana sayfa">
+                <span class="logo-mark">A</span>
+
+                <span class="logo-text">
+                    <strong>Ali İslam Dinç</strong>
+                    <small>Data Portfolio</small>
+                </span>
+            </a>
+
+            <!-- Mobil menü kontrolü -->
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="menu-toggle"
+                aria-label="Menüyü aç veya kapat"
+            >
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main-navigation" aria-label="Ana menü">
+                <a href="#hakkimda">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Özgeçmişim</span>
+                </a>
+
+                <a href="#cv">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span>CV</span>
+                </a>
+
+                <a href="#power-bi">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Power BI</span>
+                </a>
+
+                <a href="#sql">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL</span>
+                </a>
+
+                <a href="#excel">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    <span>Excel</span>
+                </a>
+
+                <a href="#diger-calismalar">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Diğer Çalışmalar</span>
+                </a>
+
+                <a href="#yazilar">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <span>Yazılarım</span>
+                </a>
+            </nav>
+
+            <a href="#iletisim" class="header-contact-button">
+                İletişim
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero / giriş bölümü -->
+        <section id="anasayfa" class="hero-section">
+            <div class="hero-container">
+
+                <!-- Fotoğraf alanı -->
+                <div class="hero-visual">
+
+                    <div class="photo-decoration photo-decoration-one"></div>
+                    <div class="photo-decoration photo-decoration-two"></div>
+
+                    <div class="photo-frame">
+                        <!--
+                            Fotoğraf dosyanı profil-foto.jpg olarak yeniden adlandır.
+                            index.html ve style.css ile aynı klasöre koy.
+                        -->
+                        <img
+                            src="profil-foto.jpg"
+                            alt="Ali İslam Dinç profil fotoğrafı"
+                            class="profile-photo"
+                        >
+                    </div>
+
+                    <div class="experience-card">
+                        <span class="experience-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </span>
+
+                        <span>
+                            <small>Odak Alanım</small>
+                            <strong>Veri & Raporlama</strong>
+                        </span>
+                    </div>
+
+                    <div class="availability-badge">
+                        <span class="status-dot"></span>
+                        Yeni projelere açık
+                    </div>
+
+                </div>
+
+                <!-- Giriş metni -->
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        <span></span>
+                        VERİDEN ANLAMA, ANLAMDAN KARARA
+                    </p>
+
+                    <h1>
+                        Merhaba, ben
+                        <span>Ali İslam Dinç.</span>
+                    </h1>
+
+                    <h2>Veri Analisti ve Raporlama Uzmanı</h2>
+
+                    <p class="hero-description">
+                        İşletme ve lojistik altyapımı; veri analizi, iş zekâsı
+                        ve raporlama teknolojileriyle birleştiriyorum.
+                        Karmaşık verileri anlaşılır, ölçülebilir ve karar
+                        süreçlerini destekleyen içgörülere dönüştürüyorum.
+                    </p>
+
+                    <div class="hero-skills">
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power Query</span>
+                        <span>Power Pivot</span>
+                        <span>Veri Görselleştirme</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#power-bi" class="primary-button">
+                            Projelerimi İncele
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                        <a href="#cv" class="secondary-button">
+                            <i class="fa-regular fa-file-pdf"></i>
+                            CV'mi Görüntüle
+                        </a>
+                    </div>
+
+                    <div class="hero-summary">
+                        <div>
+                            <strong>İşletme</strong>
+                            <span>Lisans ve yüksek lisans altyapısı</span>
+                        </div>
+
+                        <div>
+                            <strong>Lojistik</strong>
+                            <span>Sektörel bilgi ve operasyon bakışı</span>
+                        </div>
+
+                        <div>
+                            <strong>Veri</strong>
+                            <span>Analiz, raporlama ve görselleştirme</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sağ sosyal medya alanı -->
+                <aside class="social-sidebar" aria-label="Sosyal medya">
+                    <span class="social-title">Beni takip edin</span>
+
+                    <span class="social-line"></span>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        title="LinkedIn adresini buraya ekle"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        title="Instagram adresini buraya ekle"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="mailto:mailadresin@example.com"
+                        aria-label="E-posta"
+                        title="E-posta adresini değiştir"
+                    >
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </aside>
+
+            </div>
+
+            <a href="#hakkimda" class="scroll-indicator">
+                <span>Keşfet</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- Hakkımda -->
+        <section id="hakkimda" class="content-section">
+            <div class="section-container about-layout">
+
+                <div class="section-heading">
+                    <p class="section-label">
+                        <span>01</span>
+                        Hakkımda
+                    </p>
+
+                    <h2>
+                        Veriyi yalnızca raporlamıyor,
+                        <em>anlamlandırıyorum.</em>
+                    </h2>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="large-paragraph">
+                        İşletme eğitimi, finansal bakış açısı ve lojistik
+                        bilgisiyle beslenen çok disiplinli bir veri analizi
+                        yaklaşımına sahibim.
+                    </p>
+
+                    <p>
+                        Power BI, SQL, Excel, Power Query ve Power Pivot
+                        araçlarıyla verilerin hazırlanması, modellenmesi,
+                        analiz edilmesi ve görselleştirilmesi üzerine
+                        çalışmalar gerçekleştiriyorum.
+                    </p>
+
+                    <p>
+                        Amacım; yöneticilerin ve işletmelerin önemli
+                        göstergeleri hızlı biçimde takip edebileceği,
+                        anlaşılır ve güvenilir raporlama sistemleri
+                        geliştirmektir.
+                    </p>
+
+                    <div class="about-values">
+                        <article>
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <h3>Analitik Düşünce</h3>
+                            <p>
+                                Problemleri ölçülebilir parçalara ayırarak
+                                veriye dayalı çözümler geliştiririm.
+                            </p>
+                        </article>
+
+                        <article>
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h3>Görsel Anlatım</h3>
+                            <p>
+                                Karmaşık sonuçları sade ve anlaşılır
+                                dashboard tasarımlarına dönüştürürüm.
+                            </p>
+                        </article>
+
+                        <article>
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h3>İş Perspektifi</h3>
+                            <p>
+                                Analizlerin teknik olarak değil, ticari
+                                kararlar açısından da değer üretmesine
+                                odaklanırım.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CV bölümü -->
+        <section id="cv" class="content-section alternate-section">
+            <div class="section-container">
+
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="section-label">
+                            <span>02</span>
+                            Özgeçmiş ve CV
+                        </p>
+
+                        <h2>Eğitim ve uzmanlık yolculuğum</h2>
+                    </div>
+
+                    <!--
+                        CV dosyanı cv-ali-islam-dinc.pdf adıyla
+                        proje klasörüne ekledikten sonra bu bağlantı çalışır.
+                    -->
+                    <a
+                        href="cv-ali-islam-dinc.pdf"
+                        target="_blank"
+                        class="outline-button"
+                    >
+                        <i class="fa-solid fa-download"></i>
+                        CV'yi İndir
+                    </a>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <span class="timeline-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </span>
+
+                        <div class="timeline-content">
+                            <p class="timeline-type">Eğitim</p>
+                            <h3>İşletme Lisans ve Yüksek Lisans</h3>
+                            <p>
+                                Yönetim, finans, pazarlama ve işletme
+                                süreçlerine ilişkin akademik altyapı.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </span>
+
+                        <div class="timeline-content">
+                            <p class="timeline-type">Eğitim</p>
+                            <h3>Lojistik ve Operasyon Bilgisi</h3>
+                            <p>
+                                Tedarik zinciri, taşımacılık ve operasyon
+                                süreçlerine yönelik sektörel yaklaşım.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-icon">
+                            <i class="fa-solid fa-coins"></i>
+                        </span>
+
+                        <div class="timeline-content">
+                            <p class="timeline-type">Eğitim</p>
+                            <h3>Sermaye Piyasaları ve Finans</h3>
+                            <p>
+                                Finansal göstergeler, piyasalar ve sayısal
+                                analiz konusunda destekleyici bilgi birikimi.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </span>
+
+                        <div class="timeline-content">
+                            <p class="timeline-type">Uzmanlaşma</p>
+                            <h3>Veri Analizi ve İş Zekâsı</h3>
+                            <p>
+                                SQL, Power BI, Excel, Power Query, veri
+                                modelleme ve raporlama alanlarında sürekli
+                                gelişim.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Power BI projeleri -->
+        <section id="power-bi" class="content-section">
+            <div class="section-container">
+
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="section-label">
+                            <span>03</span>
+                            Power BI Projeleri
+                        </p>
+
+                        <h2>Veriyi yönetsel içgörüye dönüştüren raporlar</h2>
+                    </div>
+
+                    <p class="section-description">
+                        Dashboard görsellerini ve proje bağlantılarını
+                        hazırladıkça aşağıdaki kartlara ekleyebilirsin.
+                    </p>
+                </div>
+
+                <div class="featured-project-grid">
+
+                    <article class="project-card project-card-large">
+                        <div class="project-preview powerbi-preview">
+                            <div class="mini-dashboard">
+                                <div class="mini-dashboard-header">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="mini-stat-row">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+                                <div class="mini-chart-row">
+                                    <div class="mini-bar-chart">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="mini-donut"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span>POWER BI</span>
+                                <span>Öne Çıkan Proje</span>
+                            </div>
+
+                            <h3>Satış Performans Dashboard'u</h3>
+
+                            <p>
+                                Satış, kârlılık, ürün performansı ve bölgesel
+                                dağılımların tek ekranda takip edilebildiği
+                                yönetim raporu.
+                            </p>
+
+                            <ul class="project-technologies">
+                                <li>DAX</li>
+                                <li>Power Query</li>
+                                <li>Veri Modelleme</li>
+                                <li>KPI</li>
+                            </ul>
+
+                            <a href="#" class="project-link">
+                                Projeyi İncele
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+
+                        <span class="project-number">01</span>
+
+                        <h3>Stok ve Envanter Analizi</h3>
+
+                        <p>
+                            Stok seviyeleri, ürün devir hızları ve kritik
+                            stok göstergeleri için raporlama çalışması.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Yakında
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+
+                        <span class="project-number">02</span>
+
+                        <h3>Lojistik Operasyon Analizi</h3>
+
+                        <p>
+                            Teslimat performansı, rota verimliliği ve
+                            operasyon maliyetlerini inceleyen dashboard.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Yakında
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SQL projeleri -->
+        <section id="sql" class="content-section alternate-section">
+            <div class="section-container">
+
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="section-label">
+                            <span>04</span>
+                            SQL Projeleri
+                        </p>
+
+                        <h2>Doğru sorular için doğru sorgular</h2>
+                    </div>
+
+                    <div class="section-symbol">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                </div>
+
+                <div class="sql-project-grid">
+
+                    <article class="sql-card">
+                        <span class="sql-card-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+
+                        <div>
+                            <p class="card-category">SQL ANALİZİ</p>
+                            <h3>E-Ticaret Satış Analizi</h3>
+
+                            <p>
+                                Müşteri, sipariş, ürün ve satış tabloları
+                                üzerinde JOIN, GROUP BY ve alt sorgularla
+                                analiz çalışması.
+                            </p>
+
+                            <div class="code-preview">
+                                <code>
+                                    SELECT category,<br>
+                                    &nbsp;&nbsp;SUM(revenue) AS total_revenue<br>
+                                    FROM sales<br>
+                                    GROUP BY category;
+                                </code>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                GitHub'da Görüntüle
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="sql-card">
+                        <span class="sql-card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+
+                        <div>
+                            <p class="card-category">SQL ANALİZİ</p>
+                            <h3>Müşteri Segmentasyonu</h3>
+
+                            <p>
+                                Müşteri davranışlarının sipariş sıklığı,
+                                toplam harcama ve son işlem tarihine göre
+                                sınıflandırılması.
+                            </p>
+
+                            <div class="code-preview">
+                                <code>
+                                    SELECT customer_id,<br>
+                                    &nbsp;&nbsp;COUNT(order_id) AS orders,<br>
+                                    &nbsp;&nbsp;SUM(amount) AS value<br>
+                                    FROM orders;
+                                </code>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                GitHub'da Görüntüle
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Excel dashboardları -->
+        <section id="excel" class="content-section">
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <p class="section-label">
+                        <span>05</span>
+                        Excel Dashboard Tasarımları
+                    </p>
+
+                    <h2>Dinamik, anlaşılır ve kullanışlı rapor ekranları</h2>
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-card-top">
+                            <span class="dashboard-icon">
+                                <i class="fa-solid fa-chart-area"></i>
+                            </span>
+
+                            <span>Dashboard 01</span>
+                        </div>
+
+                        <h3>Finansal Performans Raporu</h3>
+
+                        <p>
+                            Gelir, gider, bütçe ve gerçekleşen sonuçların
+                            karşılaştırmalı analizi.
+                        </p>
+
+                        <div class="progress-group">
+                            <div>
+                                <span>Rapor Tasarımı</span>
+                                <strong>90%</strong>
+                            </div>
+
+                            <span class="progress-bar">
+                                <span style="width: 90%;"></span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-card-top">
+                            <span class="dashboard-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </span>
+
+                            <span>Dashboard 02</span>
+                        </div>
+
+                        <h3>Satış ve Hedef Takibi</h3>
+
+                        <p>
+                            Aylık satışların hedeflerle karşılaştırıldığı
+                            dinamik yönetim ekranı.
+                        </p>
+
+                        <div class="progress-group">
+                            <div>
+                                <span>Veri Görselleştirme</span>
+                                <strong>85%</strong>
+                            </div>
+
+                            <span class="progress-bar">
+                                <span style="width: 85%;"></span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-card-top">
+                            <span class="dashboard-icon">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </span>
+
+                            <span>Dashboard 03</span>
+                        </div>
+
+                        <h3>Stok Kontrol Paneli</h3>
+
+                        <p>
+                            Ürün bazında stok miktarı, kritik seviye ve
+                            sipariş ihtiyacı analizi.
+                        </p>
+
+                        <div class="progress-group">
+                            <div>
+                                <span>Veri Modelleme</span>
+                                <strong>80%</strong>
+                            </div>
+
+                            <span class="progress-bar">
+                                <span style="width: 80%;"></span>
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Diğer çalışma alanları -->
+        <section
+            id="diger-calismalar"
+            class="content-section alternate-section"
+        >
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <p class="section-label">
+                        <span>06</span>
+                        Diğer Çalışmalar
+                    </p>
+
+                    <h2>Verinin hazırlık aşamasından nihai rapora kadar</h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <a href="#" class="service-card">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-filter-circle-dollar"></i>
+                        </span>
+
+                        <span class="service-number">01</span>
+
+                        <h3>Power Query</h3>
+
+                        <p>
+                            Veri temizleme, birleştirme, dönüştürme ve
+                            otomatik yenileme çalışmaları.
+                        </p>
+
+                        <span class="service-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="service-card">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-table"></i>
+                        </span>
+
+                        <span class="service-number">02</span>
+
+                        <h3>Pivot Tablo</h3>
+
+                        <p>
+                            Büyük veri tablolarından hızlı özetler,
+                            karşılaştırmalar ve yönetim raporları.
+                        </p>
+
+                        <span class="service-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="service-card">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </span>
+
+                        <span class="service-number">03</span>
+
+                        <h3>Power Pivot</h3>
+
+                        <p>
+                            İlişkisel veri modelleri, hesaplanan sütunlar
+                            ve ölçülerle gelişmiş analiz.
+                        </p>
+
+                        <span class="service-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="service-card">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </span>
+
+                        <span class="service-number">04</span>
+
+                        <h3>Veri Analizleri</h3>
+
+                        <p>
+                            Eğilim, performans, karşılaştırma ve karar
+                            destek analizleri.
+                        </p>
+
+                        <span class="service-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Yazılar ve görseller -->
+        <section id="yazilar" class="content-section">
+            <div class="section-container">
+
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="section-label">
+                            <span>07</span>
+                            Yazılarım ve Görsellerim
+                        </p>
+
+                        <h2>Öğrendiklerimi paylaşırken bilgimi derinleştiriyorum</h2>
+                    </div>
+
+                    <a href="#" class="text-link">
+                        Tüm içerikleri gör
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="article-grid">
+
+                    <article class="article-card">
+                        <div class="article-image article-image-one">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <div class="article-content">
+                            <p class="article-meta">
+                                Veri Analizi
+                                <span></span>
+                                5 dk. okuma
+                            </p>
+
+                            <h3>
+                                İyi bir dashboard yalnızca güzel görünmek
+                                zorunda değildir
+                            </h3>
+
+                            <p>
+                                Başarılı dashboard tasarımında görsellik,
+                                veri doğruluğu ve kullanıcı deneyimi
+                                arasındaki denge.
+                            </p>
+
+                            <a href="#">
+                                Yazıyı Oku
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image article-image-two">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div class="article-content">
+                            <p class="article-meta">
+                                SQL
+                                <span></span>
+                                6 dk. okuma
+                            </p>
+
+                            <h3>
+                                Veri analistleri için SQL neden temel bir
+                                yetkinliktir?
+                            </h3>
+
+                            <p>
+                                SQL'in veri toplama, filtreleme ve analiz
+                                süreçlerindeki gerçek kullanım alanları.
+                            </p>
+
+                            <a href="#">
+                                Yazıyı Oku
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image article-image-three">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <div class="article-content">
+                            <p class="article-meta">
+                                Yapay Zekâ
+                                <span></span>
+                                7 dk. okuma
+                            </p>
+
+                            <h3>
+                                Yapay zekâ veri analistinin çalışma biçimini
+                                nasıl değiştiriyor?
+                            </h3>
+
+                            <p>
+                                Analiz, raporlama ve veri hazırlama
+                                aşamalarında yapay zekâ destekli çalışma.
+                            </p>
+
+                            <a href="#">
+                                Yazıyı Oku
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim -->
+        <section id="iletisim" class="contact-section">
+            <div class="section-container contact-container">
+
+                <div>
+                    <p class="section-label light-label">
+                        <span>08</span>
+                        İletişim
+                    </p>
+
+                    <h2>
+                        Veriyi birlikte
+                        <em>değere dönüştürelim.</em>
+                    </h2>
+
+                    <p>
+                        Veri analizi, raporlama, dashboard tasarımı ve
+                        proje iş birlikleri için benimle iletişime
+                        geçebilirsiniz.
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <a
+                        href="mailto:mailadresin@example.com"
+                        class="contact-email"
+                    >
+                        <span>
+                            <small>E-posta gönderin</small>
+                            mailadresin@example.com
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <div class="contact-socials">
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="https://github.com/"
+                            aria-label="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <span class="logo-mark">A</span>
+
+                <span>
+                    <strong>Ali İslam Dinç</strong>
+                    <small>Veri Analisti ve Raporlama Uzmanı</small>
+                </span>
+            </div>
+
+            <p>
+                © 2026 Ali İslam Dinç. Tüm hakları saklıdır.
+            </p>
+
+            <a href="#anasayfa" class="back-to-top">
+                Yukarı dön
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+    </footer>
+
 </body>
 </html>
